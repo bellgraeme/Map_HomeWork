@@ -94,7 +94,6 @@ ScotlandMap.prototype.toggle = function() {
 // because the containing <div> is recreated in the overlay's onAdd() method.
 ScotlandMap.prototype.toggleDOM = function() {
   if (this.getMap()) {
-    // Note: setMap(null) calls OverlayView.onRemove()
     this.setMap(null);
   } else {
     this.setMap(this.map_);
